@@ -13,8 +13,16 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 11px 11px 17px 4px rgba(0, 0, 0, 0.49);
+    color: black;
     display: flex;
+    flex-direction: column;
     height: 400px;
+    padding: 30px;
     width: 50%;
+
+    p {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
   }
 }
