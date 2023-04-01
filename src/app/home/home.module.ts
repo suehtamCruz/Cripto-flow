@@ -1,17 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { HomeRoutingModule } from './home-routing.module';
+import { NgModule } from '@angular/core';
 import { ContentComponent } from './content/content.component';
-
+import { HomeRoutingModule } from './home-routing.module';
+import { HomeService } from './services/home.service';
 
 @NgModule({
-  declarations: [
-    ContentComponent
-  ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+  declarations: [ContentComponent],
+  imports: [CommonModule, HomeRoutingModule],
+  providers: [HomeService],
 })
-export class HomeModule { }
+export class HomeModule {}
